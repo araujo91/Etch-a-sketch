@@ -4,9 +4,26 @@
             <meta charset="UTF-8">
             <meta name="description" content="Etch-a-Sketch">
             <link rel="stylesheet" href="style.css">
-            <!--<script src="scripter.js"></script>-->
+            <script src="scripter.js"></script>
         </head>
-        <main>
+        <body onload="divisor(16);">
+            <button onclick="reset()">Reset</button>
+            <div id="container" ></div>
+            <script>
+                let container = document.getElementById('container')
+                container.addEventListener('mouseover', function(e) {
+                    if (e.target.className ==  "sand") {
+                        e.target.className += " sandhover"
+                    } else {
+                        e.target.className = "sand"
+                    }
+                })
+                
+                
+                
+
+            </script>
             
-        </main>
+            
+        </body>
     </html>
