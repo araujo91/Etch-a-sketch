@@ -6,24 +6,13 @@
             <link rel="stylesheet" href="style.css">
             <script src="scripter.js"></script>
         </head>
-        <body onload="divisor(16);">
-            <button onclick="reset()">Reset</button>
-            <div id="container" ></div>
-            <script>
-                let container = document.getElementById('container')
-                container.addEventListener('mouseover', function(e) {
-                    if (e.target.className ==  "sand") {
-                        e.target.className += " sandhover"
-                    } else {
-                        e.target.className = "sand"
-                    }
-                })
-                
-                
-                
-
-            </script>
-            
-            
+        <body onload="divisor(16);blackWhite()">
+            <div id="papaDiv">
+                <button onclick="reset();blackWhite()">Reset</button>
+                <button onclick="color()">Color</button>
+                <button onclick="rand()">Random</button>
+                <div id="container" ></div>
+            </div>
+                        
         </body>
     </html>
